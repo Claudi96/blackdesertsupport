@@ -18,26 +18,23 @@ footer{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
-	
+	width: 100%;
 	font: bold 16px sans-serif;
  
 	padding: 55px 50px;
 	margin-top: 80px;
-	
 }
  
 .footer-distributed .footer-left,
 {
 	
-	
+	vertical-align: top;
 	text-align: center;
-	
 }
  
 .footer-distributed .footer-left{
-	
+	width: 40%;
 	text-align: center;
-	
 }
  
 .footer-distributed h3{
@@ -45,20 +42,18 @@ footer{
 	font: normal 24px 'Arial', cursive;
 	margin: 0;
 	text-align: center;
-	
 }
  
 .footer-distributed h3 span{
 	color:  #5383d3;
 	text-align: center;
-	
 }
  
  
 .footer-distributed .footer-links{
 	color:  #ffffff;
 	
-	
+	padding: 0;
 }
  
 .footer-distributed .footer-links a{
@@ -66,7 +61,6 @@ footer{
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
-
 }
  
 .footer-distributed .footer-company-name{
@@ -74,7 +68,6 @@ footer{
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
-	
 }
  
 
@@ -92,7 +85,6 @@ footer{
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
-		
 	}
  
 
@@ -101,11 +93,4 @@ footer{
 		font-size: auto;
 	}
  
-
-
-
-
-
-
-
-
+}
