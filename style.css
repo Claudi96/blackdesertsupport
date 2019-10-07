@@ -142,19 +142,19 @@ body,
   background-image: url("./screenshots/love.jpg");
 }
 .slide8 {
-  background-image: url('./screenshots/kisshim.jpg');
+  background-image: url("./screenshots/kisshim.jpg");
 }
 .slide9 {
-  background-image: url('./screenshots/summer.jpg');
+  background-image: url("./screenshots/summer.jpg");
 }
 .slide10 {
-  background-image: url('./screenshots/teamsoul.jpg');
+  background-image: url("./screenshots/teamsoul.jpg");
 }
 .slide11 {
-  background-image: url('./screenshot/soul.jpg');
+  background-image: url("./screenshot/soul.jpg");
 }
 .slide12 {
-  background-image: url('./screenshots/supporters.jpg');
+  background-image: url("./screenshots/supporters.jpg");
 }
 
 
