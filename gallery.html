@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
 
 
@@ -160,7 +158,7 @@
 .responsive {
 
 
-         
+        
          height: auto;
          max-width: 100%;
          padding-top: 3%;
@@ -323,15 +321,14 @@ body {
 
 <div class="topnav" id="myTopnav">
   <a a href="index.html" class="active">Home</a>
-  <a a href="index.html#guides">Guides</a>
+  <a href="index.html#guides">Guides</a>
   <a href="bdocomics.html">BDO Comics</a>
   <a href="gallery.html">Gallery</a>
-  <a href="">Videos</a>
+  <a href="videos.html">Videos</a>
   <a a href="https://discord.gg/cAGfN4b" target="_blank">Join Discord</a>
   <a a href="https://www.sea.playblackdesert.com/Main/Index" target="_blank" style="margin-left: 45%;" style="max-width: 600px">Go to Black Desert Official Website </a></li>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+    <i class="fa fa-bars"></i></a>
 </div>
 
 
@@ -345,81 +342,162 @@ function myFunction() {
   }
 }
 </script>
+</head>
 
 
 
+<body>
+<div class="wrap">
 
-<div class="responsive">
-<img src="Banner.png" style="width:100%">
-</div>
-
-<br>
-<br>
-<br>
-<br>
-
-<div class="soon" style="text-align: center;"> <h1> Coming soon...</h1></div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<hr>
+  <div id="arrow-left" class="arrow"></div>
 
 
-<div class="aboutme">
-<div class="about" id="about">
+  <div id="slider">
 
-
-
-                <!-- About Section -->
-
-                   <div class="w3-container w3-padding-32 w3-center" style="color: black">
-                    <h3>A Little Something from Me</h3><br>
-                    <img src="img/aboutme.jpg" alt="Me" class="w3-image" style="display:block;margin:auto"
-                        width="300" height="133">
-                    <div class="tepess" style="text-transform: uppercase; color: purple">
-                        <h4><b>Tepess</b></h4>
-                      </div>
-                         <!-- <h6><i>The quick brown fox jumps over the lazy Kyte Uy.</i></h6>-->
-                        
-                        <div class="message"><p>I have been playing black desert for more than a year now as a Dark Knight. It was a year ago when I met this amazingly incredible player that taught me everything I know in black desert, she gave me all her time and effort in sharing her knowledge to me along with other friends we've met along the way and up to this moment I'm still truly grateful to her and looking back on how these amazing people I play with have become such a part of my daily life of many ups and downs, frustrations, disappoinment, bad decisions, hardwork, dedication, fun, happiness, love, and most of all friendship. Now as a supporter it's time for me to return all the favors to other players and help them grow and and enjoy desert.</p>
-                        </div>
-                    </div>
-                </div>
-</div>
-</div>
-                <!-- Footer -->
-                <hr>
-
-                <!-- End page content -->
-    
+    <div class="slide slide1">
+      <div class="slide-content">
         
-        <footer class="footer-distributed" style="color: white;">
- 
-        <div class="footer-left">
- 
-        <h3>Black Desert Online Supporter</h3>
- 
-      
- 
-        <p class="footerdate">2019</p>
-        </div>
+      </div>
+    </div>
 
-        </footer>
+
+
+    <div class="slide slide2">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+
+    <div class="slide slide3">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+        <div class="slide slide4">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+        <div class="slide slide5">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+        <div class="slide slide6">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+        <div class="slide slide7">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+        <div class="slide slide8">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+        <div class="slide slide9">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+
+        <div class="slide slide10">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+            <div class="slide slide11">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+            <div class="slide slide12">
+      <div class="slide-content">
+        
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div id="arrow-right" class="arrow"></div>
+  <script>
+
+  let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+
+</script>
+</div>
 </body>
-
 </html>
