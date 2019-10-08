@@ -212,22 +212,19 @@ a{
 
 .newad{
 
-            background-image: url(img/interlaced.png);
+            background-image: url(img/skin.png);
 
             background-repeat: repeat;
             margin-right: -15px;
             margin-left: -16px;
             color: black;
 
-
         
 }
 
 .newad .w3-padding-32{
 
-  font-size: 20px;
-
-
+  font-size: 25px;
 
 } 
 
@@ -246,6 +243,38 @@ a{
 
 
 }
+
+
+.onehowto{
+
+            background-image: url(img/interlaced.png);
+
+            background-repeat: repeat;
+            
+            color: white;
+          
+
+        }
+
+
+
+.onehowto .onehowmessage{
+
+          text-indent: 50px;
+          text-align: justify;
+          letter-spacing: 1px;
+          margin-right:  15%;
+          margin-left: 15%;
+          padding-left: 2%;
+          padding-right: 2%;
+          color: black;
+          padding-top: 1%;
+          padding-bottom: 1%;
+}
+
+
+
+
 
 
 
@@ -320,7 +349,7 @@ body {
 
 <div class="topnav" id="myTopnav">
   <a a href="index.html" class="active">Home</a>
-  <a href="#guides">Guides</a>
+  <a href="index.html#guides">Guides</a>
   <a href="bdocomics.html">BDO Comics</a>
   <a href="gallery.html">Gallery</a>
   <a href="videos.html">Videos</a>
@@ -350,185 +379,68 @@ function myFunction() {
 </div>
 
 
-<!-- Slideshow container -->
-        <div class="slideshow-container">
+<div class="onehowto">
+<div class="howto" id="onehow">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="img/img1.jpg" style="width:100%">
-                <br>
-                <div class="text" style="color: black" style="font-weight: bold;">Click Next</div>
-                
+
+
+ <!-- About Section -->
+
+    <div class="w3-container w3-padding-32 w3-center" style="color: black">
+        <h3>Style your UI the way you want it</h3><br>
+
+        <div class="tepess" style="text-transform: uppercase; color: black">
+            <h4><b>This is my personal UI</b></h4>
             </div>
+          <img src="img/uitepess.png" alt="Me" class="w3-image" style="display:block;margin:auto; margin-bottom: 1%;"width="1200" height="532">
+          <div class="onehowmessage" style="font-size: 20px"><p> I am sharing my UI for the sake of this guide. As you can see it has its own personality that reflects how I play black desert. I disabled some of the parts of my UI because if you're playing for a very long time you are bound to figure out what works for you so I customized it especially to fit my needs. If you want to copy or tweak your own version of this UI I provided a screenshot of the edit ui mode below.</p> </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img/img2.jpg" style="width:100%">
-                <br>
-                <div class="text" style="color: black" style="font-weight: bold;">Click Next</div>
-               
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img/img3.jpg" style="width:100%">
-                <br>
-                <div class="text" style="color: black" style="font-weight: bold;">Click Next</div>
-                
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-
-
-<script>
-var slideIndex = 0;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-<br>
-
-
-<div class="newad">
-<div class="newadventure" id="about" style="max-height: 100%;">
-
-
-                   <div class="w3-container w3-padding-32 w3-center">
-                    <img src="img/newadventurertitle.png" alt="Me" class="w3-image" style="display:block;margin:auto">
-
-                    <div class="w3-padding-32"> 
-                        <h4><b>Here is list of all the basic things you must know or do to make your life easier in the future so be sure to check this out first.</b></h4><br>
-                        <p>1. Get to know your Quest tab and My Information. <a href="onehowto.html"> How-to?</a></p> 
-                        <p>2. UI customization. <a href="twohowto.html">How-to?</a></p> 
-                        <p>3. Go to Velia and add storage slots. <a href="">How-to?</a></p> 
-                        <p>4. Famliarize yourself with these important items. <a href="">How-to?</a></p> 
-                        <p>5. Tame a wild horse. <a href="">How-to?</a></p> 
-                        <p>6. Start your quest Balenos to Mediah. </p> 
+          <img src="img/tepesseditui.png" alt="Me" class="w3-image" style="display:block;margin:auto; margin-bottom: 1%;" width="1200" height="532">
+                         <!-- <h6><i>The quick brown fox jumps over the lazy Kyte Uy.</i></h6> -->
                         
-                    </div>
-                </div>
+          <div class="onehowmessage" style="font-size: 20px"><p> It's very easy to customize it you just drag each part and place it wherever you want it, enable or disable it clicking the eye icon and you can't disable the red parts of the UI so take note of that.</p></div>
+
+
+
+
+
+          <div class="tepess" style="text-transform: uppercase; color: black; margin-top: 6%;">
+            <h4><b>Useful UI Information</b></h4>
+          </div>
+          
+          <img src="img/ui.png" alt="Me" class="w3-image" style="display:block;margin:auto; margin-bottom: 1%;"width="1200" height="532">
+
+          <div class="onehowmessage" style="font-size: 20px; margin-bottom: 2%;"><p> Now that you have customized your own UI I will point out a few important parts that will be helpful for you. </p></div>
+
+
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>1. Your number of skill points available and your skill points exp.</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>2. Your current and total energy your character has, this is very important to players who life skill and you can increase your total energy by gaining new knowledge.</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>3. Your current available and total contribution points. You can increase your CP by doing daily quests.</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>4. You can take different actions using this tray for instance if you have a horse you can call her by clicking on the horse icon, you can summon your maid, feed your pets etc...</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>5. This icon is for forced PVP and it is currently turned off. If you turn it on you can engage any player in combat zones. (NOTE: More on this soon.)</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>6. This is your Black Spirit Rage that generates overtime or when you kill mobs. You can consume 100% of it and get a 1 min buff by default the button is z and we call it Z-BUFF (you can change this button) or you can use it to make your skill stronger and it will consume a portion of your 100% (10%,25%,50%,100%).</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%"><p>7. This is the find NPC icon to help you locate the NPC for example click marketplace to autopath you to the nearest marketplace director. You can also type a specific name of the NPC you're looking for and it will autopath you.</p></div>
+          <img src="img/findnpc.png" alt="Me" class="w3-image" style="display:block;margin:auto; margin-bottom: 1%;"width="400" height="266">
+          <div class="onehowmessage" style="font-size: 20px; margin-bottom: -4%;"><p>8. This is your horse health (top) and stamina (bottom) and it is visible only if you're riding your horse. (NOTE: Feed your horse special carrot to restore health and stamina.)</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>9. This is your active buffs.</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>10. The black spirit safe where your daily attendance/ login rewards are stored as well as the daily silver you get form Family fame. Right click on the item you want to withdraw.</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%; margin-bottom: -4%;"><p>11. Your friends list. You can also access this by pressing N.</p></div>
+          <div class="onehowmessage" style="font-size: 20px; margin-top: -4%"><p>12. The mail. This is where Black desert event rewards and pearl item gifts is sent to you so if you participated in the recent events be sure top check this out for some good rewards!</p></div>
+                   
+          </div>
+
+
+    </div>
 </div>
 </div>
 
 
 
-<!-- !PAGE CONTENT! -->
 
-<div class="guides" id="guides">
-            <br>
-            <div class="librarytitle"> <h1> Guide Library</h1> </div>
-            
-            <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:5px">
 
-                <!-- First Photo Grid-->
-                <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Sandwich" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Steak" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Cherries" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Pasta and Wine" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                </div>
 
-                <!-- Second Photo Grid-->
-                <div class="w3-row-padding w3-padding-16 w3-center">
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Popsicle" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Salmon" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Sandwich" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Croissant" style="width:100%">
-                        <h3>KYTE IS GEI</h3>
-                        <p>I have evidence.</p>
-                    </div>
-                </div>
-
-                 <div class="w3-row-padding w3-padding-16 w3-center">
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Popsicle" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Salmon" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Sandwich" style="width:100%">
-                        <h3>Shai</h3>
-                        <p>Shai is a a support class that has both combat and buff abilities.</p>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="img/tempthumbnail.jpg" alt="Croissant" style="width:100%">
-                        <h3>KYTE IS GEI</h3>
-                        <p>I have evidence.</p>
-                    </div>
-                </div>
-            </div>
 <br>
-</div> 
+
 
 <div class="aboutme">
 <div class="about" id="about">
